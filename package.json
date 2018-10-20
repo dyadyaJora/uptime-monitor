@@ -1,0 +1,29 @@
+{
+  "name": "uptime-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/nodemon index.js --exec \"npm run lint && node\"",
+    "lint": "./node_modules/.bin/eslint ./**/*.js",
+    "lint:fix": "./node_modules/.bin/eslint ./**/*.js --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.4",
+    "node-ipc": "^9.1.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-codex": "github:codex-team/eslint-config",
+    "nodemon": "^1.18.4"
+  }
+}
