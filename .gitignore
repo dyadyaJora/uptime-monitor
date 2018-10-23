@@ -4,3 +4,5 @@ experiments
 out.log
 
 config/config.prod.js
+
+.vagrant/
